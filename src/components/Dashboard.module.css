@@ -1,59 +1,63 @@
-/* Dashboard.module.css */
-
 .container {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #f9f9f9;
-    min-height: 100vh;
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+    font-family: "Poppins", sans-serif;
   }
   
   .header {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #4a4a4a;
+    font-family: "Lobster", cursive;
+    font-size: 36px;
+    color: #ff6f91;
     margin-bottom: 20px;
   }
   
-  .nav {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 30px;
-  }
-  
-  .navLink {
-    text-decoration: none;
-    color: #4a4a4a;
-    padding: 10px 15px;
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .navLink:hover {
-    background-color: #e0e0e0;
-    color: #6a0dad; /* Violet touch */
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
   }
   
   .card {
-    width: 300px;
+    background-color: white;
     padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
     text-align: center;
-    color: #333;
-    transition: transform 0.2s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .card:hover {
-    transform: scale(1.05);
-    border: 2px solid #6a0dad; /* Violet border on hover */
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
   }
   
-  .footer {
-    margin-top: 40px;
-    font-size: 0.9rem;
-    color: #6a0dad; /* Violet text */
+  .cardTitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+  }
+  
+  .cardButton {
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #ff85a2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cardButton:hover {
+    background-color: #ff4e78;
+    transform: scale(1.07);
   }
   

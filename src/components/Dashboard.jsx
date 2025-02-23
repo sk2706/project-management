@@ -1,25 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from "./Dashboard.module.css";
 
 const Dashboard = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.header}>Welcome to the Dashboard 💜</h1>
-
-      <nav className={styles.nav}>
-        <Link to="/login" className={styles.navLink}>Login</Link>
-        <Link to="/signup" className={styles.navLink}>Signup</Link>
-      </nav>
-
-      <div className={styles.card}>
-        <p>This is your project management dashboard.</p>
-        <p>Stay organized and track your progress easily!</p>
+      <h1 className={styles.header}>Dashboard</h1>
+      <div className={styles.cardContainer}>
+        <div className={styles.card}>
+          <h2 className={styles.cardTitle}>Your Tasks</h2>
+          <button className={styles.cardButton}>View Tasks</button>
+        </div>
+        <div className={styles.card}>
+          <h2 className={styles.cardTitle}>Upcoming Deadlines</h2>
+          <button className={styles.cardButton}>Check Calendar</button>
+        </div>
+        <div className={styles.card}>
+          <h2 className={styles.cardTitle}>Reports</h2>
+          <button className={styles.cardButton}>View Reports</button>
+        </div>
       </div>
-
-      <footer className={styles.footer}>
-       
-      </footer>
     </div>
   );
 };

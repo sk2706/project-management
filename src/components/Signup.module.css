@@ -3,62 +3,66 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f7f8fc; /* Light neutral background */
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    font-family: "Poppins", sans-serif;
   }
   
-  .card {
-    background-color: #ffffff;
-    border: 2px solid #e0e0e0;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .heading {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: #4a4a4a; /* Dark gray text */
+  .formContainer {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 380px;
     text-align: center;
+  }
+  
+  .title {
+    font-family: "Lobster", cursive;
+    font-size: 30px;
+    color: #4a90e2;
+    margin-bottom: 20px;
   }
   
   .input {
     width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #c7c7c7;
-    border-radius: 6px;
-    font-size: 1rem;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #7f7fd5;
+    box-shadow: 0 0 10px rgba(127, 127, 213, 0.6);
   }
   
   .button {
     width: 100%;
-    padding: 0.75rem;
-    background-color: #7f5af0; /* Violet */
-    color: #ffffff;
+    padding: 14px;
+    background-color: #7f7fd5;
+    color: white;
+    font-weight: 600;
     border: none;
-    border-radius: 6px;
-    font-size: 1rem;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease, background-color 0.3s ease;
   }
   
   .button:hover {
-    background-color: #6a48d7; /* Darker violet hover */
+    background-color: #5a60e0;
+    transform: scale(1.08);
   }
   
   .link {
-    display: block;
-    margin-top: 1rem;
-    text-align: center;
-    color: #7f5af0; /* Violet link */
+    margin-top: 10px;
+    color: #4a90e2;
+    font-weight: 500;
     text-decoration: none;
-    font-size: 0.9rem;
+    transition: color 0.2s ease;
   }
   
   .link:hover {
-    text-decoration: underline;
+    color: #2c6ed5;
   }
   
