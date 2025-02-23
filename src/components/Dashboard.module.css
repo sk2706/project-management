@@ -1,0 +1,59 @@
+/* Dashboard.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #4a4a4a;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navLink:hover {
+    background-color: #e0e0e0;
+    color: #6a0dad; /* Violet touch */
+  }
+  
+  .card {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    border: 2px solid #6a0dad; /* Violet border on hover */
+  }
+  
+  .footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #6a0dad; /* Violet text */
+  }
+  
